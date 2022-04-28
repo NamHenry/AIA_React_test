@@ -1,0 +1,30 @@
+.EditNumber {
+  display: block;
+  justify-content: space-between;
+  width: 100px;
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .num {
+    width: 80px;
+    text-align: center;
+  }
+
+  .button {
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      cursor: pointer;
+
+    }
+
+    &:active {
+      scale: 0.6;
+      opacity: 0.5;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.CartPage {
+  .title {
+    font-weight: 800;
+    font-size: 50px;
+    padding: 16px;
+  }
+
+  margin: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .TableFooter {
+    td {
+      padding: 16px;
+      font-weight: bold;
+    }
+
+    .totalContent {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

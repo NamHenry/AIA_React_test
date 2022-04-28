@@ -1,0 +1,28 @@
+._button {
+  min-width: 80px;
+  text-align: center;
+}
+
+._button:hover {
+  cursor: pointer;
+}
+
+._button:active {
+  scale: 0.9;
+  opacity: 0.8;
+}
+
+._button.disabled {
+
+  &:hover {
+    cursor: unset;
+
+  }
+
+  &:active {
+    scale: 1;
+    opacity: 0.4;
+  }
+
+  opacity: 0.4;
+}

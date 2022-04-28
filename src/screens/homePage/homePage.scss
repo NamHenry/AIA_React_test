@@ -1,0 +1,11 @@
+.HomePage {
+
+  .productList {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 50px;
+    row-gap: 50px;
+  }
+}

@@ -1,0 +1,90 @@
+.ProductPage {
+  margin-top: 16px;
+  display: flex;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  padding: 16px;
+
+
+  .d-flex {
+    display: flex;
+  }
+
+  .fullWidth {
+    width: 100%
+  }
+
+  .flex-1 {
+    flex: 1
+  }
+
+  .flex-half {
+    flex: 0.5
+  }
+
+  .padding-8 {
+    padding: 8px
+  }
+
+  .title {
+    font-weight: bold;
+    text-align: justify;
+  }
+
+  .des {
+    color: #333;
+    text-align: justify;
+
+  }
+
+  .price {
+    color: green
+  }
+
+  .imageContainer {
+    display: flex;
+    justify-content: center;
+
+    .image {
+      height: 300px;
+      width: 400px;
+    }
+  }
+
+  .productDetails {
+    width: 200px;
+    flex: 1;
+    padding: 16px 64px;
+  }
+
+  .actions {
+    border: 1px solid #ccc;
+    position: relative;
+    width: 300px;
+    margin-bottom: 64px;
+
+    .quantity {
+      display: flex;
+      align-items: center;
+      padding: 8px;
+      margin-top: 16px;
+    }
+
+    .addToCard {
+      padding: 16px;
+      margin-top: auto;
+      position: absolute;
+      bottom: 32px;
+      width: 100%;
+      box-sizing: border-box;
+      border-top: 2px solid #ccc;
+      border-bottom: 2px solid #ccc;
+      background-color: #333;
+      color: white;
+    }
+  }
+
+  font-size: 20px;
+}
