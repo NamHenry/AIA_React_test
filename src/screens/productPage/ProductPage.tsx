@@ -1,6 +1,5 @@
 import React from 'react'
 import './index.scss'
-import logo from '../../assets/logo.png'
 import EditNumber from '../../component/EditNumber'
 import Button from '../../component/Button'
 import { useParams } from 'react-router-dom'
@@ -11,7 +10,7 @@ import { decrement, increment } from '../../redux/features/cart/cartSlice'
 export default function ProductPage() {
   const { id } = useParams();
   const productsData = useSelector((state: RootState) => state.products);
-  const productShowed = productsData.find((p, i) => {
+  const productShowed = productsData.find((p) => {
     return p.id === Number(id)
   })
   const cartData = useSelector((state: RootState) => state.cart);

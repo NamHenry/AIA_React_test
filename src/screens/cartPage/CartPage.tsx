@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react'
 import EditNumber from '../../component/EditNumber'
 import Table from '../../component/Table'
 import './index.scss'
@@ -6,7 +5,6 @@ import { Product } from '../../dataModels'
 import { useDispatch, useSelector } from 'react-redux'
 import { RootState } from '../../redux/store'
 import { decrement, increment } from '../../redux/features/cart/cartSlice'
-import { AiOutlineConsoleSql } from 'react-icons/ai'
 // type Props = {}
 
 export default function CartPage() {
