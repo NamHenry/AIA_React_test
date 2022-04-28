@@ -1,4 +1,3 @@
-import React from 'react'
 import './index.scss'
 import EditNumber from '../../component/EditNumber'
 import Button from '../../component/Button'

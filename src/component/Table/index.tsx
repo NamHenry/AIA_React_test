@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 import TableHeader from './TableHeader'
 import './index.scss'
 import TableContent from './TableContent'

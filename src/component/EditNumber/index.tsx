@@ -1,4 +1,3 @@
-// import React from 'react'
 import { AiOutlineMinusCircle } from 'react-icons/ai'
 import { GrAddCircle } from 'react-icons/gr'
 import './index.scss'

@@ -25,7 +25,6 @@
         "linebreak-style": [
             "error",
             "windows"
-        ],
-        "@typescript-eslint/no-unused-vars": 0
+        ]
     }
 }
