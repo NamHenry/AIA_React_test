@@ -5,7 +5,7 @@ type Props = {
   logo: string
 }
 import './index.scss'
-import NavItem from './NavItem';
+import NavItem from './navItem/NavItem';
 export default function NavBar(props: Props) {
   return (
     <div className="navBar">

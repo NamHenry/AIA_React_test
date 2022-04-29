@@ -8,7 +8,7 @@ import logo from './assets/logo.png';
 function App() {
   return (
     <div className="App">
-      <NavBar logo={logo}></NavBar>
+      <NavBar logo={logo} />
       <div className="content">
         <Routes>
           <Route path="/home" element={<HomePage />} />

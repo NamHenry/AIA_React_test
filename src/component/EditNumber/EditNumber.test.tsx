@@ -18,7 +18,7 @@ describe('Test EditNumber component', () => {
     inCreaseButton = screen.getByTestId('increase-btn');
     numberShow = screen.getByTestId('quantity');
   })
-  test('render exactly', () => {
+  test('EditNumber should have a decrease button, a increase button and a num div to display number', () => {
     expect(deCreaseButton).toBeInTheDocument();
     expect(numberShow).toBeInTheDocument();
     expect(inCreaseButton).toBeInTheDocument();

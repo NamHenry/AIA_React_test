@@ -51,12 +51,12 @@ export default function ProductPage() {
             </div>
             <div className="flex-1">
               {productInCart ?
-                <EditNumber num={productInCart?.quantity} onDecrease={handleDecrease} onIncrease={handleIncrease}></EditNumber>
-                : <EditNumber num={0} onDecrease={() => { return null }} onIncrease={handleIncrease}></EditNumber>
+                <EditNumber num={productInCart?.quantity} onDecrease={handleDecrease} onIncrease={handleIncrease} />
+                : <EditNumber num={0} onDecrease={() => { return null }} onIncrease={handleIncrease} />
               }
             </div>
           </div>
-          <Button disable={productInCart ? true : false} onClick={handleAddToCart} className='addToCard' buttonText='Add to Card'></Button>
+          <Button disable={productInCart ? true : false} onClick={handleAddToCart} className='addToCard' buttonText='Add to Card' />
         </div>
       </div>
     )

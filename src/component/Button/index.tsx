@@ -13,6 +13,6 @@ export default function Button(props: Props) {
   }
   return (
     <div data-testid='button' className={`_button ${props.className} ${props.disable ? 'disabled' : ''}`} onClick={handleOnClick}
-    > {props.buttonText}</div >
+    >{props.buttonText}</div >
   )
 }

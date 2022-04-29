@@ -25,6 +25,13 @@
         "linebreak-style": [
             "error",
             "windows"
+        ],
+        "react/self-closing-comp": [
+            "error",
+            {
+                "component": true,
+                "html": true
+            }
         ]
     }
 }

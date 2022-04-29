@@ -28,7 +28,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint --fix --ext .ts,.tsx ."
+    "lint": "eslint --fix --ext .ts,.tsx .",
   },
   "eslintConfig": {
     "extends": [
@@ -59,6 +59,8 @@
     "eslint-plugin-n": "^15.2.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.29.4",
+    "import-sort-cli": "^6.0.0",
+    "import-sort-style-react": "^5.1.0",
     "prettier-eslint": "^14.0.1"
   }
 }

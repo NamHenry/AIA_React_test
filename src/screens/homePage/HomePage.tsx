@@ -1,4 +1,3 @@
-import React from 'react'
 import ProductCard from '../../component/ProductCard'
 import './homePage.scss'
 import { useSelector } from 'react-redux';
@@ -12,7 +11,7 @@ export default function HomePage() {
         <div className='HomePage'>
             <div className="productList">
                 {productsData.map((p, i) => {
-                    return <ProductCard key={i} product={p}></ProductCard>
+                    return <ProductCard key={i} product={p} />
                 })}
             </div>
         </div>

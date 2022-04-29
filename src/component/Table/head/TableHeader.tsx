@@ -4,7 +4,7 @@ type Props = {
 }
 export default function TableHeader(props: Props) {
   return (
-    <thead>
+    <thead data-testid='table-head'>
       <tr>
         {props.data.map((d, i) => {
           return <th key={i}>{d}</th>

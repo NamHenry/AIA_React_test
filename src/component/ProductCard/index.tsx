@@ -1,4 +1,3 @@
-import React from 'react';
 import Button from '../Button';
 import './index.scss';
 import { useNavigate } from 'react-router-dom';
@@ -25,16 +24,15 @@ export default function ProductCard({ product }: Props) {
   return (
     <div className='productCard'>
       <div className="imageContainer">
-        <img className='productImage' src={product.image} alt='product image'></img>
+        <img data-testid='product-img' className='productImage' src={product.image} alt='product image' />
       </div>
       <div className="content">
-        <div className="productName">{product.title}</div>
-        <div className="price">{`${product.price} $`}</div>
-
+        <div data-testid='product-name' className="productName">{product.title}</div>
+        <div data-testid='product-price' className="price">{`${product.price} $`}</div>
       </div>
       <div className="buttons">
-        <Button onClick={handleMoreInfo} buttonText='More Info' className='button'></Button>
-        <Button disable={productInCard ? true : false} onClick={handleAddToCart} buttonText='Add to Card' className='button'></Button>
+        <Button onClick={handleMoreInfo} buttonText='More Info' className='button' />
+        <Button disable={productInCard ? true : false} onClick={handleAddToCart} buttonText='Add to Card' className='button' />
       </div>
     </div>
   )

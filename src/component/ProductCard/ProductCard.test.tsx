@@ -1,7 +1,8 @@
-import NavBar from ".";
+import ProductCard from ".";
 import { render, screen } from "@testing-library/react";
-import logo from '../../assets/logo.png'
 import { BrowserRouter } from "react-router-dom";
+import { Provider } from "react-redux";
+import { store } from "../../redux/store";
 const mockProps = {
   id: 1,
   title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
@@ -14,16 +15,22 @@ const mockProps = {
     count: 120
   }
 }
-describe('Test NavBar component', () => {
+describe('Test ProductCard component', () => {
   beforeEach(() => {
     render(
-      <BrowserRouter>
-        <NavBar {...mockProps} />
-      </BrowserRouter>
+      <Provider store={store}>
+        <BrowserRouter>
+          <ProductCard product={mockProps} />
+        </BrowserRouter>
+      </Provider>
     );
   })
-  test('NavBar render well', () => {
-    expect(screen.getByTestId('logo').getAttribute('src')).toEqual(logo)
-    expect(screen.getAllByRole('link').length).toEqual(2)
+  test('ProductCard should display image, name, price of the product and 2 buttons ', () => {
+    expect(screen.getByTestId('product-img').getAttribute('src')).toEqual(mockProps.image)
+    expect(screen.getByTestId('product-name').textContent).toEqual(mockProps.title)
+    expect(screen.getByTestId('product-price').textContent).toEqual(mockProps.price + ' $')
+    expect(screen.getAllByTestId('button').length).toEqual(2);
+    expect(screen.getAllByTestId('button')[0].textContent).toEqual('More Info');
+    expect(screen.getAllByTestId('button').length).toEqual(2);
   })
 })

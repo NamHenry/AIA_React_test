@@ -13,7 +13,7 @@ describe('Test Button Component', () => {
   beforeEach(() => {
     button = render(<Button {...mockProps} />).container.firstChild as HTMLElement;
   })
-  test('Button render exactly', () => {
+  test('Button should display text as a prop inside it', () => {
     expect(button).toHaveTextContent('Click me');
     expect(button).toHaveClass('_button');
     expect(button).toHaveClass('button');

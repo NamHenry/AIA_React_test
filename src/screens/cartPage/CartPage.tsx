@@ -34,7 +34,7 @@ export default function CartPage() {
   const TableFooter = () => {
     return <tfoot className="TableFooter">
       <tr>
-        <td colSpan={2}></td>
+        <td colSpan={2} />
         <td className='totalContent'>
           <div>Total</div>
           <div>{totalPrice.toFixed(2) + ' $'}</div>
@@ -55,7 +55,7 @@ export default function CartPage() {
       if (productInCart) {
         const _arr: (string | number | JSX.Element)[] = [];
         _arr.push(productInCart.title);
-        _arr.push(<EditNumber num={cartData[i].quantity} onDecrease={() => { handleDecrease(cartData[i].productId) }} onIncrease={() => { handleIncrease(cartData[i].productId) }}></EditNumber>);
+        _arr.push(<EditNumber num={cartData[i].quantity} onDecrease={() => { handleDecrease(cartData[i].productId) }} onIncrease={() => { handleIncrease(cartData[i].productId) }} />);
         _arr.push((productInCart.price * cartData[i].quantity).toFixed(2) + ' $');
         arr.push(_arr);
 
@@ -67,7 +67,7 @@ export default function CartPage() {
   return (
     <div className='CartPage'>
       <div className="title">Cart</div>
-      <Table headerTitles={headerTitles} bodyData={createBodyData()} customFooter={TableFooter}></Table>
+      <Table headerTitles={headerTitles} bodyData={createBodyData()} customFooter={TableFooter} />
     </div>
   )
 }
