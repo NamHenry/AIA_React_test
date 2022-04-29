@@ -21,6 +21,7 @@ In the project directory:
 
 ### First, you need to install dependencies
 write these following commands:
+[^1]: My reference.
 [^1]: `npm install`
 [^2]:`npm install `
 Runs the app in the development mode.\
