@@ -32,3 +32,5 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ### Run component tests
 `npm run test`
 
+## Author
+Nam Henry
