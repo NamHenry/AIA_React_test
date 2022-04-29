@@ -22,10 +22,7 @@
         "@typescript-eslint"
     ],
     "rules": {
-        "linebreak-style": [
-            "error",
-            "windows"
-        ],
+        "linebreak-style": 0,
         "react/self-closing-comp": [
             "error",
             {
