@@ -11,17 +11,15 @@ export default function EditNumber(props: Props) {
     <>
       <div className='EditNumber'>
         <div className="container">
-          <div className="button" onClick={props.onDecrease}>
+          <div data-testid="decrease-btn" className="button" onClick={props.onDecrease}>
             <AiOutlineMinusCircle size={30} color='black' />
-            <p></p>
           </div>
-          <div className='num'>
+          <div data-testid="quantity" className='num'>
             {props.num}
           </div>
-          <div className="button" onClick={props.onIncrease}>
+          <div data-testid="increase-btn" className="button" onClick={props.onIncrease}>
             <GrAddCircle size={30} color='black' />
           </div>
-
         </div>
       </div>
     </>

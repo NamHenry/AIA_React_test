@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 
 interface Props {
@@ -9,8 +8,6 @@ interface Props {
   to: string
 }
 export default function NavItem(props: Props) {
-
-
   return (
     <div>
       <Link to={props.to} className='navItem'>
