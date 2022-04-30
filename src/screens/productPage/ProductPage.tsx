@@ -1,5 +1,5 @@
 import './index.scss'
-import EditNumber from '../../component/EditNumber'
+import EditQuantity from '../../component/EditQuantity'
 import Button from '../../component/Button'
 import { useParams } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
@@ -51,8 +51,8 @@ export default function ProductPage() {
             </div>
             <div className="flex-1">
               {productInCart ?
-                <EditNumber num={productInCart?.quantity} onDecrease={handleDecrease} onIncrease={handleIncrease} />
-                : <EditNumber num={0} onDecrease={() => { return null }} onIncrease={handleIncrease} />
+                <EditQuantity num={productInCart?.quantity} onDecrease={handleDecrease} onIncrease={handleIncrease} />
+                : <EditQuantity num={0} onDecrease={() => { return null }} onIncrease={handleIncrease} />
               }
             </div>
           </div>

@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import EditNumber from "../../EditNumber";
+import EditNumber from "../../EditQuantity";
 import TableContent from "./TableContent";
 
 const mockProps = {

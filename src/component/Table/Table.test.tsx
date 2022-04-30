@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import Table from '.';
-import EditNumber from '../EditNumber';
+import EditNumber from '../EditQuantity';
 const mockProps = {
   customFooter: () => {
     return <tfoot data-testid='table-footer'>

@@ -1,4 +1,4 @@
-import EditNumber from '../../component/EditNumber'
+import EditQuantity from '../../component/EditQuantity'
 import Table from '../../component/Table'
 import './index.scss'
 import { Product } from '../../dataModels'
@@ -55,7 +55,7 @@ export default function CartPage() {
       if (productInCart) {
         const _arr: (string | number | JSX.Element)[] = [];
         _arr.push(productInCart.title);
-        _arr.push(<EditNumber num={cartData[i].quantity} onDecrease={() => { handleDecrease(cartData[i].productId) }} onIncrease={() => { handleIncrease(cartData[i].productId) }} />);
+        _arr.push(<EditQuantity num={cartData[i].quantity} onDecrease={() => { handleDecrease(cartData[i].productId) }} onIncrease={() => { handleIncrease(cartData[i].productId) }} />);
         _arr.push((productInCart.price * cartData[i].quantity).toFixed(2) + ' $');
         arr.push(_arr);
 
