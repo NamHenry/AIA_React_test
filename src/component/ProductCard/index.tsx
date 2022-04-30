@@ -1,14 +1,18 @@
 import Button from '../Button';
 import './index.scss';
 import { useNavigate } from 'react-router-dom';
-import { CartItem, Product } from '../../dataModels';
+import { CartItem } from '../../dataModels';
 import { useDispatch, useSelector } from 'react-redux';
 import { increment } from '../../redux/features/cart/cartSlice';
 import { RootState } from '../../redux/store';
 type Props = {
-  product: Product
+  id: number,
+  title: string,
+  price: number,
+  description: string,
+  image: string
 }
-export default function ProductCard({ product }: Props) {
+export default function ProductCard(product: Props) {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const cartData = useSelector((state: RootState) => state.cart);

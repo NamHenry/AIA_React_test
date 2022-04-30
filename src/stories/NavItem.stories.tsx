@@ -14,15 +14,15 @@ const Template: ComponentStory<typeof NavItem> = (args) => {
   );
 }
 
-export const HomeNav = Template.bind({});
-HomeNav.args = {
+export const HomeNavitem = Template.bind({});
+HomeNavitem.args = {
   children: <BsHouseDoor color="black" size={40} />,
   text: 'HOME',
   to: '/home'
 }
 
-export const CartNav = Template.bind({});
-CartNav.args = {
+export const CartNavitem = Template.bind({});
+CartNavitem.args = {
   children: <BsCart color="black" size={40} />,
   text: 'CART',
   to: '/cart'

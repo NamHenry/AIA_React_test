@@ -11,7 +11,14 @@ export default function HomePage() {
         <div className='HomePage'>
             <div className="productList">
                 {productsData.map((p, i) => {
-                    return <ProductCard key={i} product={p} />
+                    return <ProductCard
+                        key={i}
+                        id={p.id}
+                        title={p.title}
+                        price={p.price}
+                        description={p.description}
+                        image={p.image}
+                    />
                 })}
             </div>
         </div>
