@@ -1,9 +1,9 @@
 import { render } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
-import Button, { Props } from './index'
+import Button, { ButtonProps } from './index'
 let testValue = 'initial value';
 let button: HTMLElement;
-const mockProps: Props = {
+const mockProps: ButtonProps = {
   buttonText: 'Click me',
   onClick: () => { testValue = 'Button clicked' },
   className: 'button',
