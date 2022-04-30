@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import Table from '.';
-import EditNumber from '../EditQuantity';
+import EditQuantity from '../EditQuantity';
 const mockProps = {
   customFooter: () => {
     return <tfoot data-testid='table-footer'>
@@ -21,17 +21,17 @@ const mockProps = {
   bodyData: [
     [
       'Product 1',
-      <EditNumber key={1} num={1} onDecrease={() => null} onIncrease={() => null} />,
+      <EditQuantity key={1} num={1} onDecrease={() => null} onIncrease={() => null} />,
       '56.93 $'
     ],
     [
       'Product 2',
-      <EditNumber key={1} num={1} onDecrease={() => null} onIncrease={() => null} />,
+      <EditQuantity key={1} num={1} onDecrease={() => null} onIncrease={() => null} />,
       '20.82 $'
     ],
     [
       'Product 3',
-      <EditNumber key={1} num={1} onDecrease={() => null} onIncrease={() => null} />,
+      <EditQuantity key={1} num={1} onDecrease={() => null} onIncrease={() => null} />,
       '58.24 $'
     ],
   ]
