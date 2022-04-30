@@ -4,7 +4,7 @@ import CartPage from './screens/cartPage/CartPage';
 import ProductPage from './screens/productPage/ProductPage';
 import './App.scss'
 import NavBar from './component/Navbar';
-import logo from './assets/logo.png';
+import logo from './assets/logo2.jpg';
 function App() {
   return (
     <div className="App">

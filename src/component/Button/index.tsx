@@ -1,14 +1,14 @@
 import './index.scss'
 import CSS from 'csstype';
 
-
+type Size = 'sm' | 'md' | 'lg' | 'full';
 export type ButtonProps = {
   buttonText: string,
   onClick: () => void,
   className: string,
   disable?: boolean,
   rounded?: boolean,
-  size?: string,
+  size?: Size,
   bgColor?: string,
   textColor?: string,
   textBold?: boolean,
@@ -33,15 +33,15 @@ export default function Button(props: ButtonProps) {
     _style.color = props.textColor;
   }
   switch (props.size) {
-    case 'small': {
+    case 'sm': {
       _style.width = '80px';
       break;
     }
-    case 'medium': {
+    case 'md': {
       _style.width = '120px';
       break;
     }
-    case 'large': {
+    case 'lg': {
       _style.width = '200px';
       break;
     }
