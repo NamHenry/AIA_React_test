@@ -24,13 +24,16 @@ write these following commands:
 1. `npm install`
 2. `npm install --dev`
 
-### Run the app
+### To run the app
 `npm start`
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### Run component tests
+### To run component tests
 `npm run test`
+
+### To run storybook
+`npm run storybook`
 
 ## Author
 Nam Henry
