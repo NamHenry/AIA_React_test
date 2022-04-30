@@ -1,12 +1,11 @@
 .ProductPage {
-  margin-top: 16px;
-  display: flex;
+  margin-top: 80px;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
   padding: 16px;
-
+  display: flex;
 
   .d-flex {
     display: flex;
@@ -63,6 +62,7 @@
     border: 1px solid #ccc;
     position: relative;
     width: 300px;
+    height: 300px;
     margin-bottom: 64px;
 
     .quantity {

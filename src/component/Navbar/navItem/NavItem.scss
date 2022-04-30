@@ -1,0 +1,24 @@
+.navItem {
+  margin: 0 16px;
+  background-color: rgba(214, 212, 212, 0.2);
+  padding: 8px 16px;
+  border-radius: 8px;
+  min-width: 100px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  width: 80px;
+  justify-content: space-between;
+
+  .text {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &:active {
+    scale: 0.6;
+    opacity: 0.6;
+  }
+}

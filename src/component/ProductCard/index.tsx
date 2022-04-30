@@ -32,7 +32,7 @@ export default function ProductCard({ product }: Props) {
       </div>
       <div className="buttons">
         <Button onClick={handleMoreInfo} buttonText='More Info' className='button' />
-        <Button disable={productInCard ? true : false} onClick={handleAddToCart} buttonText='Add to Card' className='button' />
+        <Button disable={productInCard ? true : false} onClick={handleAddToCart} buttonText={productInCard ? 'Added to Cart' : 'Add to Cart'} className='button' />
       </div>
     </div>
   )

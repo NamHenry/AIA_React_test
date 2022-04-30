@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-
+import './NavItem.scss'
 interface Props {
   text: string,
   children?: JSX.Element,
