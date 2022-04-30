@@ -56,7 +56,7 @@ export default function ProductPage() {
               }
             </div>
           </div>
-          <Button disable={productInCart ? true : false} onClick={handleAddToCart} className='addToCard' buttonText='Add to Card' />
+          <Button disable={productInCart ? true : false} onClick={handleAddToCart} className='addToCard' buttonText={productInCart ? 'Added to Cart' : 'Add to Cart'} />
         </div>
       </div>
     )
