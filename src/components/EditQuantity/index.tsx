@@ -38,7 +38,7 @@ export default function EditQuantity(props: Props) {
             <AiOutlineMinusCircle size={30} color='black' />
           </div>
           <div data-testid="quantity" className='num'>
-            {internalNum}
+            {props.num}
           </div>
           <div data-testid="increase-btn" className="button" onClick={handleIncrease}>
             <GrAddCircle size={30} color='black' />

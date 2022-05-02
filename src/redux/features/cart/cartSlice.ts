@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { CartItem } from "../../../dataModels";
-
+import { toast } from 'react-toastify';
 const initialState: CartItem[] = [];
 
 export const cartSlice = createSlice({
@@ -20,6 +20,7 @@ export const cartSlice = createSlice({
           newOne.quantity = action.payload.quantity;
         }
         state.push(newOne);
+        toast('The product added to the cart !', { autoClose: 1800 });
       }
     },
     increment: (state: CartItem[], action: PayloadAction<number>) => {

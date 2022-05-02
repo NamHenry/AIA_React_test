@@ -1,10 +1,12 @@
 import './styles/App.scss'
+import 'react-toastify/dist/ReactToastify.css';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import HomePage from './screens/homePage/HomePage'
 import CartPage from './screens/cartPage/CartPage';
 import ProductPage from './screens/productPage/ProductPage';
 import NavBar from './components/Navbar';
 import logo from './assets/logo2.jpg';
+import { ToastContainer } from 'react-toastify';
 function App() {
   return (
     <div className="App">
@@ -19,8 +21,8 @@ function App() {
             element={<Navigate to="/home" replace />}
           />
         </Routes>
-
       </div>
+      <ToastContainer />
     </div>
   );
 }
