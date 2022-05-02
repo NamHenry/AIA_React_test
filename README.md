@@ -26,8 +26,8 @@ In the project directory:
 
 ### Firstly, you need to install dependencies
 write these following commands:
-1. `npm install`
-2. `npm install --dev`
+1. `npm install` (install all dependencies)
+2. `npm install --dev` (install all dev dependencies)
 
 ### To run the app
 `npm start`
