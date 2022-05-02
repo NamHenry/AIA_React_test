@@ -16,18 +16,18 @@ React, redux, react-redux, react-router, typescript, react-testing-library, sass
 ## Project structure 
 This project is built from 'create-react-app' with a typescript template.
 Then in the 'src' folder, I change the content of files 'App.tsx' and 'index.tsx'. I added the following folders:
-+ assets
-*This folder contains images used in the project*
-+ components
-*This folder contains reuseable components in the project*
-+ data
-*This folder contains static data*
-+ dataModels
-*This folder contains data models as typescript interfaces*
-+ redux
-*This folder contains folders and files for building redux structures*
-+ screens
-*This folder contains components building screens respectively*
++ assets:
+- *This folder contains images used in the project*
++ components:
+- *This folder contains reuseable components in the project*
++ data:
+- *This folder contains static data*
++ dataModels:
+- *This folder contains data models as typescript interfaces*
++ redux:
+- *This folder contains folders and files for building redux structures*
++ screens:
+- *This folder contains components building screens respectively*
 
 ## UI guide
 First, as default, you are on the home page screen. The navigation bar is on top, and it's available on all screens. In the navigation bar, there is a logon on the left and two buttons on the right. One button is for navigating to the home page and the other is for navigating to the cart page. On the home page screen, you can see a list of products. Each product card involves the image, name, and price of one product. It also has two buttons. One button is for navigating to the product details page, the one left is for adding the product to the cart.
