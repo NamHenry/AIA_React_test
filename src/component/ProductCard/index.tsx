@@ -3,7 +3,7 @@ import './index.scss';
 import { useNavigate } from 'react-router-dom';
 import { CartItem } from '../../dataModels';
 import { useDispatch, useSelector } from 'react-redux';
-import { increment } from '../../redux/features/cart/cartSlice';
+import { addToCart } from '../../redux/features/cart/cartSlice';
 import { RootState } from '../../redux/store';
 type Props = {
   id: number,
@@ -20,7 +20,7 @@ export default function ProductCard(product: Props) {
     navigate('/product/' + product.id)
   }
   const handleAddToCart = () => {
-    dispatch(increment(product.id))
+    dispatch(addToCart({ id: product.id, quantity: 1 }))
   }
   const productInCard = cartData.find((item: CartItem) => {
     return item.productId === product.id;

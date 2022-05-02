@@ -1,1 +1,0 @@
-api https://fakestoreapi.com/docs

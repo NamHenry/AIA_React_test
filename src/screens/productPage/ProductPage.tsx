@@ -4,25 +4,49 @@ import Button from '../../component/Button'
 import { useParams } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { RootState } from '../../redux/store'
-import { decrement, increment } from '../../redux/features/cart/cartSlice'
+import { addToCart, decrement, increment } from '../../redux/features/cart/cartSlice'
+import { useEffect, useState } from 'react'
 
 export default function ProductPage() {
   const { id } = useParams();
-  const productsData = useSelector((state: RootState) => state.products);
-  const productShowed = productsData.find((p) => {
-    return p.id === Number(id)
-  })
-  const cartData = useSelector((state: RootState) => state.cart);
-  const productInCart = cartData.find((item) => item.productId === Number(id));
   const dispatch = useDispatch();
+  const [quantity, setQuantity] = useState(0);
+  const productsData = useSelector((state: RootState) => state.products);
+  const cartData = useSelector((state: RootState) => state.cart);
+  const productShowed = productsData.find((p) => {
+    return p.id === Number(id);
+  })
+  const productInCart = cartData.find((item) => item.productId === Number(id));
+
+  useEffect(() => {
+    if (productInCart) {
+      setQuantity(productInCart.quantity)
+
+    }
+  }, [productInCart?.quantity])
   const handleIncrease = () => {
-    dispatch(increment(Number(id)));
+    if (quantity <= 999) {
+      setQuantity(quantity => quantity + 1);
+
+    }
+    if (productInCart) {
+      dispatch(increment(Number(id)));
+
+    }
   }
   const handleDecrease = () => {
-    dispatch(decrement(Number(id)));
+    if (quantity >= 2) {
+      setQuantity(quantity => quantity - 1);
+    }
+    if (productInCart) {
+      dispatch(decrement(Number(id)));
+
+    }
   }
   const handleAddToCart = () => {
-    dispatch(increment(Number(id)))
+    if (!productInCart) {
+      dispatch(addToCart({ id: Number(id), quantity: quantity }))
+    }
   }
   if (productShowed) {
     return (
@@ -52,7 +76,7 @@ export default function ProductPage() {
             <div className="flex-1">
               {productInCart ?
                 <EditQuantity num={productInCart?.quantity} onDecrease={handleDecrease} onIncrease={handleIncrease} />
-                : <EditQuantity num={0} onDecrease={() => { return null }} onIncrease={handleIncrease} />
+                : <EditQuantity num={quantity} onDecrease={handleDecrease} onIncrease={handleIncrease} />
               }
             </div>
           </div>
