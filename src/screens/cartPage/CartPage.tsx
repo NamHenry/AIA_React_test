@@ -1,5 +1,5 @@
-import EditQuantity from '../../component/EditQuantity'
-import Table from '../../component/Table'
+import EditQuantity from '../../components/EditQuantity'
+import Table from '../../components/Table'
 import './index.scss'
 import { Product } from '../../dataModels'
 import { useDispatch, useSelector } from 'react-redux'

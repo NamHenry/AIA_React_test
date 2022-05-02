@@ -4,7 +4,12 @@ This is a small React app that shows a list of products to the user, and then t
 
 ## Technologies used: 
 
-React, redux, react-redux, react-router, typescript
+React, redux, react-redux, react-router, typescript, react-testing-library, sass, storybook, eslint
+
+# Environmental versions: 
+- node: 16.11.29
+- npm: 8.3.1
+- react: 18.0.0
 
 *I consider this small project to be a part of the big real project, so I use Redux to center the states. Therefore, this project can be easily expanded in the future.*
 

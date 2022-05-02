@@ -1,6 +1,6 @@
 import './index.scss'
-import EditQuantity from '../../component/EditQuantity'
-import Button from '../../component/Button'
+import EditQuantity from '../../components/EditQuantity'
+import Button from '../../components/Button'
 import { useParams } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { RootState } from '../../redux/store'

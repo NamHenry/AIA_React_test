@@ -3,7 +3,7 @@ import HomePage from './screens/homePage/HomePage'
 import CartPage from './screens/cartPage/CartPage';
 import ProductPage from './screens/productPage/ProductPage';
 import './App.scss'
-import NavBar from './component/Navbar';
+import NavBar from './components/Navbar';
 import logo from './assets/logo2.jpg';
 function App() {
   return (

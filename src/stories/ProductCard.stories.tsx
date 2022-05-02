@@ -1,4 +1,4 @@
-import ProductCard from "../component/ProductCard";
+import ProductCard from "../components/ProductCard";
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
 import { BrowserRouter } from "react-router-dom";

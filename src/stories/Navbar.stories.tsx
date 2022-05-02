@@ -1,4 +1,4 @@
-import Navbar from "../component/Navbar";
+import Navbar from "../components/Navbar";
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import logo from '../assets/logo.png'
 import logo2 from '../assets/logo2.jpg'

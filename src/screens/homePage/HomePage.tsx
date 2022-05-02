@@ -1,4 +1,4 @@
-import ProductCard from '../../component/ProductCard'
+import ProductCard from '../../components/ProductCard'
 import './homePage.scss'
 import { useSelector } from 'react-redux';
 import { RootState } from '../../redux/store';

@@ -1,4 +1,4 @@
-import EditQuantity from "../component/EditQuantity";
+import EditQuantity from "../components/EditQuantity";
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 export default {
   title: 'EditQuantity',

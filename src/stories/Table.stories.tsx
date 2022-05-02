@@ -1,5 +1,5 @@
-import Table from "../component/Table";
-import EditQuantity from "../component/EditQuantity";
+import Table from "../components/Table";
+import EditQuantity from "../components/EditQuantity";
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
 export default {

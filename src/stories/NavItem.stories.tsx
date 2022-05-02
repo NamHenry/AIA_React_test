@@ -1,4 +1,4 @@
-import NavItem from "../component/Navbar/navItem/NavItem";
+import NavItem from "../components/Navbar/navItem/NavItem";
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { BrowserRouter } from "react-router-dom";
 import { BsCart, BsHouseDoor } from "react-icons/bs";
