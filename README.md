@@ -8,10 +8,26 @@ React, redux, react-redux, react-router, typescript, react-testing-library, sass
 
 
 *I consider this small project to be a part of the big real project, so I use Redux to center the states. Therefore, this project can be easily expanded in the future.*
-### Environmental versions: 
+#### Environmental versions: 
 - node: ^16.11.29
 - npm: ^8.3.1
 - react: ^18.0.0
+
+## Project structure 
+This project is built from 'create-react-app' with a typescript template.
+Then in the 'src' folder, I change the content of files 'App.tsx' and 'index.tsx'. I added the following folders:
++ assets
+*This folder contains images used in the project*
++ components
+*This folder contains reuseable components in the project*
++ data
+*This folder contains static data*
++ dataModels
+*This folder contains data models as typescript interfaces*
++ redux
+*This folder contains folders and files for building redux structures*
++ screens
+*This folder contains components building screens respectively*
 
 ## UI guide
 First, as default, you are on the home page screen. The navigation bar is on top, and it's available on all screens. In the navigation bar, there is a logon on the left and two buttons on the right. One button is for navigating to the home page and the other is for navigating to the cart page. On the home page screen, you can see a list of products. Each product card involves the image, name, and price of one product. It also has two buttons. One button is for navigating to the product details page, the one left is for adding the product to the cart.
@@ -26,8 +42,10 @@ In the project directory:
 
 ### Firstly, you need to install dependencies
 write these following commands:
-1. `npm install` (install all dependencies)
-2. `npm install --dev` (install all dev dependencies)
+1. `npm install` 
+(to downloads dependencies defined in a package. json file and generates a node_modules folder with the installed modules.)
+2. `npm install --dev` 
+(to downloads devDependencies defined in a package. json file and generates a node_modules folder with the installed modules.)
 
 ### To run the app
 `npm start`
