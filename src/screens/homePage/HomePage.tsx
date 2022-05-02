@@ -8,8 +8,8 @@ export default function HomePage() {
     const productsData = useSelector((state: RootState) => state.products);
 
     return (
-        <div className='HomePage'>
-            <div className="productList">
+        <div className='home-page'>
+            <div className="product-list">
                 {productsData.map((p, i) => {
                     return <ProductCard
                         key={i}

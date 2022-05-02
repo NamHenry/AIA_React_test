@@ -4,7 +4,7 @@ This is a small React app that shows a list of products to the user, and then t
 
 ## Technologies used: 
 
-React, redux, react-redux, react-router, typescript, react-testing-library, sass, storybook, eslint
+React, redux, react-redux, react-router, typescript, react-testing-library, sass, storybook, eslint.
 
 
 *I consider this small project to be a part of the big real project, so I use Redux to center the states. Therefore, this project can be easily expanded in the future.*
@@ -17,20 +17,26 @@ React, redux, react-redux, react-router, typescript, react-testing-library, sass
 This project is built from 'create-react-app' with a typescript template.
 Then in the 'src' folder, I change the content of files 'App.tsx' and 'index.tsx'. I added the following folders:
 + assets:
-  - *This folder contains images used in the project*
+  - *This folder contains images used in the project.*
 + components:
-  - *This folder contains reuseable components in the project*
+  - *This folder contains reuseable components in the project.*
 + data:
-  - *This folder contains static data*
+  - *This folder contains static data.*
 + dataModels:
-  - *This folder contains data models as typescript interfaces*
+  - *This folder contains data models as typescript interfaces.*
 + redux:
-  - *This folder contains folders and files for building redux structures*
+  - *This folder contains folders and files for building redux structures (involving slices, store).*
 + screens:
-  - *This folder contains components building screens respectively*
+  - *This folder contains components building screens respectively.*
++ styles:
+  - *This folder contains variables.scss and App.scss.*
++ stories:
+  - *This folder contains storybook for the reuseable components respectively.*
 
 ## UI guide
-First, as default, you are on the home page screen. The navigation bar is on top, and it's available on all screens. In the navigation bar, there is a logon on the left and two buttons on the right. One button is for navigating to the home page and the other is for navigating to the cart page. On the home page screen, you can see a list of products. Each product card involves the image, name, and price of one product. It also has two buttons. One button is for navigating to the product details page, the one left is for adding the product to the cart.
+First, as default, you are on the home page screen. The navigation bar is on top, and it's available on all screens. In the navigation bar, there is a logon on the left and two buttons on the right. One button is for navigating to the home page and the other is for navigating to the cart page. 
+
+On the home page screen, you can see a list of products. Each product card involves the image, name, and price of one product. It also has two buttons. One button is for navigating to the product details page, the one left is for adding the product to the cart.
 
 On the product details page, you can see more details about the product. And you can also change the quantity and add the product to the card.
 

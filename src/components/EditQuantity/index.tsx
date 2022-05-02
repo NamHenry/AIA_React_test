@@ -32,7 +32,7 @@ export default function EditQuantity(props: Props) {
   }
   return (
     <>
-      <div className='EditQuantity'>
+      <div className='edit-quantity'>
         <div className="container">
           <div data-testid="decrease-btn" className="button" onClick={handleDecrease}>
             <AiOutlineMinusCircle size={30} color='black' />

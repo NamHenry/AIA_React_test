@@ -50,11 +50,11 @@ export default function ProductPage() {
   }
   if (productShowed) {
     return (
-      <div className='ProductPage'>
-        <div className="imageContainer">
+      <div className='product-page'>
+        <div className="image-container">
           <img className='image' src={productShowed.image} alt="product image" />
         </div>
-        <div className="productDetails">
+        <div className="product-details">
           <div className="d-flex padding-8">
             <div className='flex-1'>Product name :</div>
             <div className='flex-1 title'>{productShowed.title}</div>
@@ -80,7 +80,7 @@ export default function ProductPage() {
               }
             </div>
           </div>
-          <Button disable={productInCart ? true : false} onClick={handleAddToCart} className='addToCard' buttonText={productInCart ? 'Added to Cart' : 'Add to Cart'} />
+          <Button disable={productInCart ? true : false} onClick={handleAddToCart} className='add-to-cart' buttonText={productInCart ? 'Added to Cart' : 'Add to Cart'} />
         </div>
       </div>
     )

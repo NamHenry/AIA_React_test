@@ -1,11 +1,13 @@
-.navItem {
+@use '../../../styles/variables';
+
+.nav-item {
   margin: 0 16px;
-  background-color: rgba(214, 212, 212, 0.2);
+  background-color: variables.$nav-item-color;
   padding: 8px 16px;
   border-radius: 8px;
   min-width: 100px;
   text-decoration: none;
-  color: black;
+  color: variables.$dark-color;
   font-weight: bold;
   display: flex;
   align-items: center;

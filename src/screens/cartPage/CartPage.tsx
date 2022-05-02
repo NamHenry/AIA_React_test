@@ -1,6 +1,6 @@
+import './index.scss'
 import EditQuantity from '../../components/EditQuantity'
 import Table from '../../components/Table'
-import './index.scss'
 import { Product } from '../../dataModels'
 import { useDispatch, useSelector } from 'react-redux'
 import { RootState } from '../../redux/store'
@@ -32,10 +32,10 @@ export default function CartPage() {
     })
   }
   const TableFooter = () => {
-    return <tfoot className="TableFooter">
+    return <tfoot className="table-footer">
       <tr>
         <td colSpan={2} />
-        <td className='totalContent'>
+        <td className='total-content'>
           <div>Total</div>
           <div>{totalPrice.toFixed(2) + ' $'}</div>
         </td>
@@ -66,7 +66,7 @@ export default function CartPage() {
   }
 
   return (
-    <div className='CartPage'>
+    <div className='cart-page'>
       <div className="title">Cart</div>
       <Table headerTitles={headerTitles} bodyData={createBodyData()} customFooter={TableFooter} />
     </div>

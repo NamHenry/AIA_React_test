@@ -1,10 +1,12 @@
-.navBar {
-  border-bottom: 2px solid #ccc;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+@use '../../styles/variables';
+
+.nav-bar {
+  border-bottom: 2px solid variables.$light-gray-color;
+  box-shadow: 0px 4px 10px 0px rgba(variables.$dark-color, 0.1);
   display: flex;
   justify-content: space-between;
 
-  .logoContainer {
+  .logo-container {
     padding: 8px 64px;
 
     .logo-image {

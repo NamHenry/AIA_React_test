@@ -26,8 +26,8 @@ export default function ProductCard(product: Props) {
     return item.productId === product.id;
   })
   return (
-    <div className='productCard'>
-      <div className="imageContainer">
+    <div className='product-card'>
+      <div className="image-container">
         <img data-testid='product-img' className='productImage' src={product.image} alt='product image' />
       </div>
       <div className="content">

@@ -1,8 +1,11 @@
+@use 'variables';
+
 .App {
   width: 90%;
   margin: 0 auto;
 
-  .content {
+  .content-container {
     padding-top: 32px;
+    padding-bottom: 32px;
   }
 }

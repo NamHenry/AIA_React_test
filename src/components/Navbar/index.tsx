@@ -8,8 +8,8 @@ import './index.scss'
 import NavItem from './navItem/NavItem';
 export default function NavBar(props: Props) {
   return (
-    <div className="navBar">
-      <div className='logoContainer' >
+    <div className="nav-bar">
+      <div className='logo-container' >
         <img data-testid='logo' src={props.logo} alt="logo" className="logo-image" />
       </div>
       <div className="buttons" >

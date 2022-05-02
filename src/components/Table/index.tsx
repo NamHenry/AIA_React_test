@@ -9,7 +9,7 @@ type Props = {
 }
 export default function Table(props: Props) {
   return (
-    <table className='Table' >
+    <table className='table-wrapper' >
       <TableHeader data={props.headerTitles} />
       {
         props.bodyData.length > 0
@@ -18,7 +18,7 @@ export default function Table(props: Props) {
           :
           <tbody>
             <tr>
-              <td className='noProductText' colSpan={props.headerTitles.length}>
+              <td className='no-product-text' colSpan={props.headerTitles.length}>
                 No products in cart
               </td>
             </tr>

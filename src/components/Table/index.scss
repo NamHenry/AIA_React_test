@@ -1,15 +1,16 @@
-.Table {
+@use '../../styles/variables';
+
+.table-wrapper {
   min-width: 500px;
   border: 1px solid #ccc;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 2px 0px rgba(variables.$dark-color, 0.2);
 
   thead {
-    background-color: rgba(160, 156, 156, 0.2);
+    background-color: variables.$table-head-color;
   }
 
   tbody {
-    background-color: rgba(218, 214, 214, 0.2);
-
+    background-color: variables.$table-body-color;
   }
 
   thead,
@@ -17,7 +18,7 @@
     td {
       min-width: 200px;
 
-      .EditQuantity {
+      .edit-quantity {
         margin: 0 auto
       }
 
@@ -26,28 +27,22 @@
     th,
     td {
       &:first-child {
-
         padding: 16px;
-
         text-align: left;
       }
 
       &:last-child {
         text-align: right;
         padding: 16px;
-
-
       }
 
-      &:last-child.noProductText {
+      &:last-child.no-product-text {
         text-align: center;
       }
     }
-
-
   }
 
-  .noProductText {
+  .no-product-text {
     text-align: center;
   }
 }
