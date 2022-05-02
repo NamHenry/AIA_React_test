@@ -60,9 +60,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### To run component tests
 `npm run test`
-
+After entering this cmd, the tests will be executed. 
 ### To run storybook
 `npm run storybook`
-
+After entering this cmd, the storybook will be executed.
+Open [http://localhost:6006](http://localhost:6006) to view it in the browser.
 ## Author
 Nam Henry
