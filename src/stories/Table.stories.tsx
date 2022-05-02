@@ -9,8 +9,8 @@ export default {
 } as ComponentMeta<typeof Table>
 const Template: ComponentStory<typeof Table> = (args) => <Table {...args} />;
 
-export const Table1 = Template.bind({});
-Table1.args = {
+export const NormalTable = Template.bind({});
+NormalTable.args = {
   customFooter: () => {
     return <tfoot data-testid='table-footer'>
       <tr>

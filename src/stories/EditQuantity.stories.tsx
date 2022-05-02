@@ -6,9 +6,9 @@ export default {
 } as ComponentMeta<typeof EditQuantity>
 const Template: ComponentStory<typeof EditQuantity> = (args) => <EditQuantity {...args} />;
 
-export const EditQuantity1 = Template.bind({});
+export const NormalEditQuantity = Template.bind({});
 let testValue = 0;
-EditQuantity1.args = {
+NormalEditQuantity.args = {
   num: testValue,
   onIncrease: () => { testValue++ },
   onDecrease: () => { if (testValue >= 1) testValue-- }
