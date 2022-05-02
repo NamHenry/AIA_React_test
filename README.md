@@ -48,21 +48,21 @@ In the project directory:
 
 ### Firstly, you need to install dependencies
 write these following commands:
-1. `npm install` 
+1. `npm install`. 
 (to downloads dependencies defined in a package. json file and generates a node_modules folder with the installed modules.)
-2. `npm install --dev` 
+2. `npm install --dev`. 
 (to downloads devDependencies defined in a package. json file and generates a node_modules folder with the installed modules.)
 
 ### To run the app
-`npm start`
+`npm start`.
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### To run component tests
-`npm run test`
+`npm run test`.
 After entering this cmd, the tests will be executed. 
 ### To run storybook
-`npm run storybook`
+`npm run storybook`.
 After entering this cmd, the storybook will be executed.
 Open [http://localhost:6006](http://localhost:6006) to view it in the browser.
 ## Author
