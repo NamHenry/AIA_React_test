@@ -22,7 +22,7 @@ function App() {
           />
         </Routes>
       </div>
-      <ToastContainer />
+      <ToastContainer position="top-left" />
     </div>
   );
 }
