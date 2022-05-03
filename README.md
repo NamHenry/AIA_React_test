@@ -46,7 +46,7 @@ On the cart page, you see a table showing products added to the cart and their c
 In the project directory:
 
 ### Firstly, you need to install dependencies
-write these following commands:
+Write these following commands:
 1. `npm install`  
 (to downloads dependencies defined in a package. json file and generates a node_modules folder with the installed modules.)
 2. `npm install --dev`  
