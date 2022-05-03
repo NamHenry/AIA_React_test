@@ -35,7 +35,7 @@ export default function ProductPage() {
     }
   }
   const handleDecrease = () => {
-    if (quantity >= 2) {
+    if (quantity >= 1) {
       setQuantity(quantity => quantity - 1);
     }
     if (productInCart) {
